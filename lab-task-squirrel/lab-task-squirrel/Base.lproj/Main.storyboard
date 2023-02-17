@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Wg7-xV-89h">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Wg7-xV-89h">
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Map view configurations" minToolsVersion="14.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -32,7 +32,8 @@
                                                     <rect key="frame" x="20" y="10.999999999999998" width="350" height="20.333333333333329"/>
                                                     <subviews>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="circle.inset.filled" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="JTe-Ug-cUc">
-                                                            <rect key="frame" x="0.0" y="0.6666666666666643" width="18" height="19.333333333333332"/>
+                                                            <rect key="frame" x="0.0" y="1.6666666666666643" width="18" height="17.666666666666675"/>
+                                                            <color key="tintColor" red="0.73283291849999999" green="0.3764591612" blue="0.35874258190000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="font" weight="light">
                                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                             </preferredSymbolConfiguration>
@@ -46,6 +47,8 @@
                                                     </subviews>
                                                 </stackView>
                                             </subviews>
+                                            <color key="backgroundColor" systemColor="secondarySystemGroupedBackgroundColor"/>
+                                            <color key="tintColor" red="0.73283291849999999" green="0.3764591612" blue="0.35874258190000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <constraints>
                                                 <constraint firstItem="3hR-MB-ER4" firstAttribute="top" secondItem="BXc-Af-m5v" secondAttribute="topMargin" id="0UL-MQ-46O"/>
                                                 <constraint firstAttribute="bottomMargin" relation="greaterThanOrEqual" secondItem="3hR-MB-ER4" secondAttribute="bottom" constant="8" id="VtK-Kh-fbq"/>
@@ -53,6 +56,7 @@
                                                 <constraint firstItem="3hR-MB-ER4" firstAttribute="leading" secondItem="BXc-Af-m5v" secondAttribute="leadingMargin" id="fXf-dA-AYw"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <color key="tintColor" red="0.73283291849999999" green="0.3764591612" blue="0.35874258190000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <connections>
                                             <outlet property="completedImageView" destination="JTe-Ug-cUc" id="KJI-FB-X8p"/>
                                             <outlet property="titleLabel" destination="rY4-bn-3Uz" id="n87-9u-kGx"/>
@@ -69,7 +73,7 @@
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="1" green="0.89182679132416154" blue="0.85667272635077052" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="Q4w-ie-GaD" secondAttribute="bottom" id="Fu1-cp-GaQ"/>
                             <constraint firstItem="9An-t6-Ghh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="48" id="NsB-DI-tmW"/>
@@ -82,6 +86,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Tasks" id="BEp-bB-g30">
                         <barButtonItem key="rightBarButtonItem" image="plus" catalog="system" id="mUF-lW-14o">
+                            <color key="tintColor" red="0.73283291849999999" green="0.3764591612" blue="0.35874258190000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
                                 <segue destination="Wks-lt-YIn" kind="presentation" identifier="ComposeSegue" id="HQw-jc-QaX"/>
                             </connections>
@@ -109,13 +114,14 @@
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="circle.inset.filled" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="gP7-Uc-dFm">
                                         <rect key="frame" x="0.0" y="0.6666666666666643" width="19.333333333333332" height="19.333333333333332"/>
-                                        <color key="tintColor" systemColor="systemBlueColor"/>
+                                        <color key="tintColor" red="0.73283291849999999" green="0.3764591612" blue="0.35874258190000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="font" weight="light">
                                             <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                         </preferredSymbolConfiguration>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Complete" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iP0-tx-npM">
                                         <rect key="frame" x="24.333333333333336" y="0.0" width="77.333333333333314" height="20.333333333333332"/>
+                                        <color key="tintColor" red="0.73283291849999999" green="0.3764591612" blue="0.35874258190000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -147,15 +153,21 @@
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U18-CX-28F">
                                                 <rect key="frame" x="0.0" y="0.0" width="342" height="34.333333333333336"/>
-                                                <color key="tintColor" systemColor="systemBlueColor"/>
+                                                <color key="backgroundColor" red="0.5765875590216254" green="0.11903086182092908" blue="0.19208463729748479" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="tintColor" red="0.57835036520000005" green="0.16249251370000001" blue="0.19130727650000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="filled" title="Attach Photo"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="Attach Photo">
+                                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <color key="baseBackgroundColor" red="0.73283291849999999" green="0.3764591612" blue="0.35874258190000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </buttonConfiguration>
                                                 <connections>
                                                     <action selector="didTapAttachPhotoButton:" destination="iXV-Xg-iXn" eventType="touchUpInside" id="jQN-nU-QWb"/>
                                                 </connections>
                                             </button>
                                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iAe-dV-9ki">
                                                 <rect key="frame" x="0.0" y="34.333333333333314" width="342" height="300"/>
+                                                <color key="backgroundColor" red="0.73283291849999999" green="0.3764591612" blue="0.35874258190000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="tintColor" red="0.73283291849999999" green="0.3764591612" blue="0.35874258190000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="300" id="pMe-Ge-gta"/>
                                                 </constraints>
@@ -167,7 +179,7 @@
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="kF9-bK-uzj"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="1" green="0.89182679129999998" blue="0.85667272640000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="sqt-n7-c1E" firstAttribute="top" secondItem="kF9-bK-uzj" secondAttribute="top" constant="24" id="JMH-wB-WhD"/>
                             <constraint firstItem="kF9-bK-uzj" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="RJW-I6-Md9" secondAttribute="bottom" priority="999" constant="24" id="P8Z-dj-qQF"/>
@@ -201,7 +213,7 @@
                         <rect key="frame" x="0.0" y="47" width="390" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <textAttributes key="largeTitleTextAttributes">
-                            <color key="textColor" systemColor="systemBlueColor"/>
+                            <color key="textColor" red="0.73283291849999999" green="0.3764591612" blue="0.35874258190000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -238,7 +250,8 @@
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="lzg-S3-CuB"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="1" green="0.89182679129999998" blue="0.85667272640000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" red="0.73283291849999999" green="0.3764591612" blue="0.35874258190000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="e1a-5z-s8t" firstAttribute="top" secondItem="lzg-S3-CuB" secondAttribute="top" constant="16" id="2Cf-HN-OZW"/>
                             <constraint firstItem="lzg-S3-CuB" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="e1a-5z-s8t" secondAttribute="bottom" constant="16" id="RB5-Ah-4SH"/>
@@ -248,11 +261,13 @@
                     </view>
                     <navigationItem key="navigationItem" title="New Task" id="vWC-DD-cn2">
                         <barButtonItem key="leftBarButtonItem" title="Cancel" id="fmg-4p-f0B">
+                            <color key="tintColor" red="0.73283291849999999" green="0.3764591612" blue="0.35874258190000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
                                 <action selector="didTapCancelButton:" destination="fZK-XV-ZSw" id="tc2-q5-u9F"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Done" id="oxE-u5-MuP">
+                            <color key="tintColor" red="0.73283291849999999" green="0.3764591612" blue="0.35874258190000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
                                 <action selector="didTapDoneButton:" destination="fZK-XV-ZSw" id="2zz-5T-Uoy"/>
                             </connections>
@@ -289,11 +304,8 @@
     <resources>
         <image name="circle.inset.filled" catalog="system" width="128" height="123"/>
         <image name="plus" catalog="system" width="128" height="113"/>
-        <systemColor name="systemBackgroundColor">
+        <systemColor name="secondarySystemGroupedBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemBlueColor">
-            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="tertiaryLabelColor">
             <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.29803921568627451" colorSpace="custom" customColorSpace="sRGB"/>
